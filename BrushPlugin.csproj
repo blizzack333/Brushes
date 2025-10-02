@@ -3,35 +3,11 @@
     <TargetFramework>net48</TargetFramework>
     <OutputType>Library</OutputType>
     <AssemblyName>BrushPluginExample</AssemblyName>
+    <RootNamespace>BrushPluginExample</RootNamespace>
   </PropertyGroup>
+
+  <!-- Embed all resource images in the Resources folder -->
   <ItemGroup>
-    <EmbeddedResource Include="Resources/synthetic_brush_01_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_02_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_03_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_04_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_05_384px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_06_512px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_07_512px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_08_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_09_512px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_10_384px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_11_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_12_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_13_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_14_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_15_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_16_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_17_384px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_18_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_19_384px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_20_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_21_256px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_22_128px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_23_384px.png" />
-    <EmbeddedResource Include="Resources/synthetic_brush_24_256px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BrushLoader.cs" />
-    <Compile Include="BrushPlugin.cs" />
+    <EmbeddedResource Include="Resources\**\*.*" />
   </ItemGroup>
 </Project>
