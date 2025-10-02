@@ -28,9 +28,9 @@ jobs:
       - name: Build with MSBuild
         run: msbuild BrushPlugin.csproj /p:Configuration=Release /p:Platform=x64
 
-   - name: Package artifact
-    uses: actions/upload-artifact@v4
-    with:
-      name: BrushPlugin-build
-      path: |
-        **/bin/**/Release/**
+      - name: Package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BrushPlugin-build
+          path: |
+            **/bin/**/Release/**
