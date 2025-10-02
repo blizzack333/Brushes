@@ -17,6 +17,11 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
 
+      - name: Setup MSBuild (make msbuild available on PATH)
+        uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
+
       - name: Restore NuGet packages
         run: nuget restore BrushPlugin.csproj
 
