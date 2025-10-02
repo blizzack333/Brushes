@@ -18,13 +18,13 @@ jobs:
         uses: NuGet/setup-nuget@v1
 
       - name: Restore NuGet packages
-        run: nuget restore BrushPluginExample\BrushPlugin.csproj
+        run: nuget restore BrushPlugin.csproj
 
       - name: Build with MSBuild
-        run: msbuild BrushPluginExample\BrushPlugin.csproj /p:Configuration=Release /p:Platform=x64
+        run: msbuild BrushPlugin.csproj /p:Configuration=Release /p:Platform=x64
 
       - name: Package artifact
         uses: actions/upload-artifact@v4
         with:
           name: BrushPlugin-build
-          path: BrushPluginExample\bin\Release
+          path: bin\Release
