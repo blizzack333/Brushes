@@ -21,6 +21,10 @@
       <HintPath>paintnet_libs\PaintDotNet.Base.dll</HintPath>
       <Private>false</Private>
     </Reference>
+ <Reference Include="PaintDotNet.ComponentModel">
+    <HintPath>paintnet_libs\PaintDotNet.ComponentModel.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
     <Reference Include="PaintDotNet.Core">
       <HintPath>paintnet_libs\PaintDotNet.Core.dll</HintPath>
       <Private>false</Private>
