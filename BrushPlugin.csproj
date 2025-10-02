@@ -1,31 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
-    <OutputType>Library</OutputType>
-    <AssemblyName>BrushPluginExample</AssemblyName>
-    <RootNamespace>BrushPluginExample</RootNamespace>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\**\*.*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="PaintDotNet.Base">
-      <HintPath>C:\Program Files\paint.net\PaintDotNet.Base.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="PaintDotNet.Core">
-      <HintPath>C:\Program Files\paint.net\PaintDotNet.Core.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="PaintDotNet.Effects">
-      <HintPath>C:\Program Files\paint.net\PaintDotNet.Effects.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="PaintDotNet">
-      <HintPath>C:\Program Files\paint.net\PaintDotNet.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-  </ItemGroup>
-</Project>
+<ItemGroup>
+  <Reference Include="PaintDotNet.Base">
+    <HintPath>paintnet_libs\PaintDotNet.Base.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
+  <Reference Include="PaintDotNet.Core">
+    <HintPath>paintnet_libs\PaintDotNet.Core.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
+  <Reference Include="PaintDotNet.Effects">
+    <HintPath>paintnet_libs\PaintDotNet.Effects.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
+  <Reference Include="PaintDotNet">
+    <HintPath>paintnet_libs\PaintDotNet.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
+</ItemGroup>
