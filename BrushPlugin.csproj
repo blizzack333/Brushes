@@ -29,6 +29,10 @@
       <HintPath>paintnet_libs\PaintDotNet.Effects.dll</HintPath>
       <Private>false</Private>
     </Reference>
+  <Reference Include="PaintDotNet.Effects.Core">
+    <HintPath>paintnet_libs\PaintDotNet.Effects.Core.dll</HintPath>
+    <Private>false</Private>
+  </Reference>
     <Reference Include="PaintDotNet">
       <HintPath>paintnet_libs\PaintDotNet.dll</HintPath>
       <Private>false</Private>
