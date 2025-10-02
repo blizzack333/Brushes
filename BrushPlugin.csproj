@@ -1,18 +1,37 @@
-<ItemGroup>
-  <Reference Include="PaintDotNet.Base">
-    <HintPath>paintnet_libs\PaintDotNet.Base.dll</HintPath>
-    <Private>false</Private>
-  </Reference>
-  <Reference Include="PaintDotNet.Core">
-    <HintPath>paintnet_libs\PaintDotNet.Core.dll</HintPath>
-    <Private>false</Private>
-  </Reference>
-  <Reference Include="PaintDotNet.Effects">
-    <HintPath>paintnet_libs\PaintDotNet.Effects.dll</HintPath>
-    <Private>false</Private>
-  </Reference>
-  <Reference Include="PaintDotNet">
-    <HintPath>paintnet_libs\PaintDotNet.dll</HintPath>
-    <Private>false</Private>
-  </Reference>
-</ItemGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BrushPluginExample</AssemblyName>
+    <RootNamespace>BrushPluginExample</RootNamespace>
+
+    <!-- Optional: force x64 target when building via msbuild / CI -->
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+
+  <!-- Embed everything in the Resources folder -->
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*.*" />
+  </ItemGroup>
+
+  <!-- References to Paint.NET assemblies provided in repo (paintnet_libs folder) -->
+  <ItemGroup>
+    <Reference Include="PaintDotNet.Base">
+      <HintPath>paintnet_libs\PaintDotNet.Base.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Core">
+      <HintPath>paintnet_libs\PaintDotNet.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects">
+      <HintPath>paintnet_libs\PaintDotNet.Effects.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PaintDotNet">
+      <HintPath>paintnet_libs\PaintDotNet.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
